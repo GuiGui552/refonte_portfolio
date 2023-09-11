@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-image: linear-gradient(80deg, #bba4d4, #7b9dd2);
+    background-image: linear-gradient(80deg, #051c24, #003c57);
     overflow: hidden;
     font-family: 'poppins', sans-serif;
     z-index: 0;
@@ -13,7 +13,7 @@ body{
     height: 800px;
     width: 800px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, #bba4d4, #70c7c6);
+    background-image: linear-gradient(80deg, #051c24, #007198);
     filter: blur(80px);
     animation: down 40s infinite;
 }
@@ -24,7 +24,7 @@ body{
     height: 500px;
     width: 500px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, #dad4de, #7b9dd2);
+    background-image: linear-gradient(80deg, #0594d0, #003c57);
     filter: blur(80px);
     animation: up 30s infinite;
 }
@@ -34,7 +34,7 @@ body{
     height: 500px;
     width: 500px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, #bba4d4, #f4f0e3);
+    background-image: linear-gradient(80deg, #051c24, #04bbff);
     filter: blur(80px);
     animation: left 30s 1s infinite;
 }
@@ -44,7 +44,7 @@ body{
     height: 500px;
     width: 500px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, #a7e0e0, #7b9dd2);
+    background-image: linear-gradient(80deg, #55d2ff, #003c57);
     filter: blur(80px);
     animation: right 40s .5s infinite;
 }
@@ -102,7 +102,7 @@ nav{
     position: relative;
     display: flex;
     gap: 30px;
-    background-color: #ffffff;
+    background-color: #222327;
     padding: 15px 60px;
     border-radius: 20px;
     box-shadow: 0px 8px 9px -3px rgba(0,0,0,0.1);
@@ -110,7 +110,7 @@ nav{
 
 nav a{
     position: relative;
-    color: #474747;
+    color: #999;
     text-decoration: none;
     font-size: 1.5em;
     z-index: 2;
@@ -130,7 +130,7 @@ nav a.active{
     position: absolute;
     height: 75px;
     width: 150px;
-    background-color: #7b9dd2;
+    background-color: #007198;
     z-index: 1;
     transition: 0.5s;
     display: none;
@@ -142,12 +142,12 @@ nav a.active{
     left: -30px;
     width: 50px;
     height: 15px;
-    background-color: #7b9dd2;
+    background-color: #007198;
     border-radius: 15px;
-    box-shadow: 15px 30px #7b9dd2,
-    5px 60px #7b9dd2,
-    -15px 15px #ffffff,
-    -10px 45px #ffffff;
+    box-shadow: 15px 30px #007198,
+    5px 60px #007198,
+    -15px 15px #222327,
+    -10px 45px #222327;
     transition: 0.5s;
 }
 
@@ -157,27 +157,27 @@ nav a.active{
     right: -30px;
     width: 50px;
     height: 15px;
-    background-color: #7b9dd2;
+    background-color: #007198;
     border-radius: 15px;
-    box-shadow: 15px 30px #7b9dd2,
-    5px 60px #7b9dd2,
-    15px 15px #ffffff,
-    10px 45px #ffffff;
+    box-shadow: 15px 30px #007198,
+    5px 60px #007198,
+    15px 15px #222327,
+    10px 45px #222327;
     transition: 0.5s;
 }
 
 #indicateur.change::before{
     left: -10px;
-    box-shadow: -15px 30px #7b9dd2,
-    -5px 60px #7b9dd2,
-    -10px 15px #ffffff,
-    -20px 45px #ffffff;
+    box-shadow: -15px 30px #007198,
+    -5px 60px #007198,
+    -10px 15px #222327,
+    -20px 45px #222327;
 }
 
 #indicateur.change::after{
     right: -20px;
-    box-shadow: 10px 30px #7b9dd2,
-    20px 60px #7b9dd2,
-    15px 15px #ffffff,
-    25px 45px #ffffff;
+    box-shadow: 10px 30px #007198,
+    20px 60px #007198,
+    15px 15px #222327,
+    25px 45px #222327;
 }
