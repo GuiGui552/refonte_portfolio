@@ -7,6 +7,11 @@ body{
     background: linear-gradient(80deg, #051c24, #003c57) no-repeat fixed;
     overflow-x: hidden;
     font-family: 'poppins', sans-serif;
+    cursor: none;
+}
+
+a{
+  cursor: none;
 }
 
 .portfolio-titre{
@@ -116,7 +121,7 @@ body{
   height: 30px;
   padding: 0;
   margin: 0;
-  cursor: pointer;
+  cursor: none;
   z-index: 10;
 }
 
@@ -463,6 +468,115 @@ body{
 }
 
 
+/* curseur personnalisé */
+
+#cursor{
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  border-top: 5px solid #ffffff;
+  border-left: 5px solid #ffffff;
+  transform-origin: top;
+  transform: translate(-1px, 5px) rotate(15deg) scale(0);
+  transition: transform .1s;
+  pointer-events: none;
+  filter: drop-shadow(0 0 5px #ffffff) 
+            drop-shadow(0 0 15px #ffffff) 
+            drop-shadow(0 0 30px #ffffff);
+  z-index: 10;
+}
+
+#cursor::before{
+  content: '';
+  position: absolute;
+  left: -2.5px;
+  width: 5px;
+  height: 35px;
+  background: #ffffff;
+  transform-origin: top;
+  transform: rotate(315deg);
+}
+
+body:hover #cursor{
+  transform: translate(-1px, 5px) rotate(15deg) scale(1);
+}
+
+.presentation{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 100px;
+  z-index: 1;
+}
+
+.presentation p{
+  color: #ffffff;
+}
+
+.presentation .pyramide{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: triangle3D 25s linear infinite;
+}
+
+.presentation .pyramide .shadowGlow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  transform: rotateX(90deg) translateZ(-250px);
+  filter: blur(20px);
+}
+
+.presentation .pyramide div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.presentation .pyramide div span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#051c24, #04bbff);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotateY(calc(90deg * var(--i))) 
+            translateZ(150px) rotateX(30deg);
+  transform-origin: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+}
+
+.presentation .pyramide div span h2{
+  position: absolute;
+  margin-bottom: -20px;
+  font-size: 2.5em;
+  color: #ffffff;
+}
+
+@keyframes triangle3D {
+  0%{
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100%{
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
 @media (max-width: 1540px) {
   .accueil{
     flex-direction: column;
@@ -477,5 +591,10 @@ body{
   .accueil .accueil-content h1,
   .accueil .accueil-content h2{
     font-size: 20pt;
+  }
+
+  .presentation{
+    margin-top: 150px;
+    margin-bottom: 550px;
   }
 }
