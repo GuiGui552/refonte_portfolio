@@ -461,3 +461,21 @@ body{
         width: 100%;
     }
 }
+
+
+@media (max-width: 1540px) {
+  .accueil{
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .accueil .pp{
+    width: 200px;
+  }
+
+  .accueil .accueil-content h1,
+  .accueil .accueil-content h2{
+    font-size: 20pt;
+  }
+}

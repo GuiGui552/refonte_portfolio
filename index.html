@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/logo_blanc.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portfolio - Guillaume LISSE</title>
 </head>
 <body>
@@ -26,8 +27,11 @@
   		</ul>
   	</nav>
 
+
     <section class="accueil">
-        <img class="pp" src="images/pp.jpg" alt="pp">
+        <div data-aos="fade-up">
+            <img class="pp" src="images/pp.jpg" alt="pp">
+        </div>
         <div class="accueil-content">
             <h1 data-text="Guillaume LISSE">Guillaume LISSE</h1><br>
             <h2 data-text="Développeur web">Développeur web</h2>
@@ -40,5 +44,9 @@
     <section id="right"></section>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
