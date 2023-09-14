@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/logo_blanc.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Portfolio - Guillaume LISSE</title>
+</head>
+<body>
+
+    <div id="cursor"></div>
+
+    <a href="../index.html" class="logo">
+		<img id="logo-image" src="../images/logo_blanc.png" alt="logo-blanc">
+	</a>
+
+  	<input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+  	<label for="menu-icon"></label>
+  	<nav class="nav"> 		
+  		<ul class="pt-5">
+  			<li><a href="presentation.html">Présentation</a></li>
+  			<li><a href="competences.html">Compétences</a></li>
+  			<li><a href="#">Projets et Expéreinces professionnelles</a></li>
+  			<li><a href="../CV_Guillaume_Lisse.pdf" download>CV</a></li>
+  			<li><a href="#">Contact</a></li>
+  		</ul>
+  	</nav>
+
+
+    <section class="competences">
+        <div>
+            <div class="box" style="--i:85%;--clr:#fd4b0a;">
+                <div class="circle">
+                    <div class="bar"></div>
+                    <h2><span class="counter1" data-target="85">85</span><small>%</small></h2>
+                </div>
+                <h3>HTML/CSS</h3>
+            </div>
+            <div class="box" style="--i:85%;--clr:#980afd;">
+                <div class="circle">
+                    <h2><span class="counter" data-target="85">85</span><small>%</small></h2>
+                </div>
+                <h3>PHP</h3>
+            </div>
+            <div class="box" style="--i:70%;--clr:#fde10a;">
+                <div class="circle">
+                    <h2><span class="counter" data-target="70">70</span><small>%</small></h2>
+                </div>
+                <h3>Javascript</h3>
+            </div>
+        </div>
+        <div>
+            <div class="box" style="--i:70%;--clr:#98fd0a;">
+                <div class="circle">
+                    <h2><span class="counter" data-target="70">70</span><small>%</small></h2>
+                </div>
+                <h3>Typescript</h3>
+            </div>
+            <div class="box" style="--i:40%;--clr:#0afda8;">
+                <div class="circle">
+                    <h2><span class="counter" data-target="40">40</span><small>%</small></h2>
+                </div>
+                <h3>Symfony</h3>
+            </div>
+            <div class="box" style="--i:85%;--clr:#fd0a0a;">
+                <div class="circle">
+                    <h2><span class="counter" data-target="85">85</span><small>%</small></h2>
+                </div>
+                <h3>Laravel</h3>
+            </div>
+        </div>
+        <div>
+            <div class="box" style="--i:60%;--clr:#0ab0fd;">
+                <div class="circle">
+                    <h2><span class="counter" data-target="60">60</span><small>%</small></h2>
+                </div>
+                <h3>Angular</h3>
+            </div>
+            <div class="box" style="--i:80%;--clr:#8390e5;">
+                <div class="circle">
+                    <h2><span class="counter" data-target="80">80</span><small>%</small></h2>
+                </div>
+                <h3>SQL</h3>
+            </div>
+            <div class="box" style="--i:60%;--clr:#835b0f;">
+                <div class="circle">
+                    <h2><span class="counter" data-target="60">60</span><small>%</small></h2>
+                </div>
+                <h3>Java</h3>
+            </div>
+        </div>
+        <div>
+            <div class="box" style="--i:80%;--clr:#f09a79;">
+                <div class="circle">
+                    <h2><span class="counter" data-target="80">80</span><small>%</small></h2>
+                </div>
+                <h3>Git</h3>
+            </div>
+            <div class="box" style="--i:30%;--clr:#d3c30b;">
+                <div class="circle">
+                    <h2><span class="counter" data-target="30">30</span><small>%</small></h2>
+                </div>
+                <h3>Python</h3>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="up"></section>
+    <section id="down"></section>
+    <section id="left"></section>
+    <section id="right"></section>
+
+    <script src="../script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
