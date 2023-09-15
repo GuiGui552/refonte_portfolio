@@ -6,7 +6,7 @@ body{
     height: 100vh;
     background: linear-gradient(80deg, #051c24, #003c57) no-repeat fixed;
     overflow-x: hidden;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     cursor: none;
 }
 
@@ -637,7 +637,7 @@ body:hover #cursor{
   content: '';
   position: absolute;
   inset: 10px;
-  background: #003c57;
+  background: #003b57;
   border-radius: 50%;
 }
 
@@ -663,5 +663,27 @@ body:hover #cursor{
 @media (max-width: 1040px) {
   .competences{
     flex-direction: column;
+  }
+}
+
+/* projets */
+
+.projets{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  line-height: 1.5em;
+  margin: 0 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+@media (max-width: 1300px) {
+  .projets{
+    margin: 150px 20px 0 20px;
   }
 }
