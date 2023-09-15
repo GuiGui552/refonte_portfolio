@@ -7,11 +7,6 @@ body{
     background: linear-gradient(80deg, #051c24, #003c57) no-repeat fixed;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
-    cursor: none;
-}
-
-a{
-  cursor: none;
 }
 
 .portfolio-titre{
@@ -121,7 +116,7 @@ a{
   height: 30px;
   padding: 0;
   margin: 0;
-  cursor: none;
+  cursor: pointer;
   z-index: 10;
 }
 
@@ -467,39 +462,7 @@ a{
     }
 }
 
-
-/* curseur personnalisé */
-
-#cursor{
-  position: fixed;
-  width: 25px;
-  height: 25px;
-  border-top: 5px solid #ffffff;
-  border-left: 5px solid #ffffff;
-  transform-origin: top;
-  transform: translate(-1px, 5px) rotate(15deg) scale(0);
-  transition: transform .1s;
-  pointer-events: none;
-  filter: drop-shadow(0 0 5px #ffffff) 
-            drop-shadow(0 0 15px #ffffff) 
-            drop-shadow(0 0 30px #ffffff);
-  z-index: 10;
-}
-
-#cursor::before{
-  content: '';
-  position: absolute;
-  left: -2.5px;
-  width: 5px;
-  height: 35px;
-  background: #ffffff;
-  transform-origin: top;
-  transform: rotate(315deg);
-}
-
-body:hover #cursor{
-  transform: translate(-1px, 5px) rotate(15deg) scale(1);
-}
+/* presentation */
 
 .presentation{
   position: absolute;
@@ -685,5 +648,37 @@ body:hover #cursor{
 @media (max-width: 1300px) {
   .projets{
     margin: 150px 20px 0 20px;
+  }
+}
+
+/* contact */
+
+.contact{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+  font-size: 2em;
+  z-index: 1;
+}
+
+.contact h1 b a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contact h1 b a:hover{
+  background-color: #ffffff;
+  color: #051c24;
+  border-radius: 10px;
+  transition: .2s linear;
+}
+
+@media (max-width: 1300px) {
+  .contact{
+    flex-direction: column;
+    font-size: 1.2em;
   }
 }

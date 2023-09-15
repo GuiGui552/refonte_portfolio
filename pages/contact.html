@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../images/logo_blanc.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio - Guillaume LISSE</title>
+</head>
+<body>
+
+    <a href="../index.html" class="logo">
+		<img id="logo-image" src="../images/logo_blanc.png" alt="logo-blanc">
+	</a>
+
+  	<input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+  	<label for="menu-icon"></label>
+  	<nav class="nav"> 		
+  		<ul class="pt-5">
+  			<li><a href="presentation.html">Présentation</a></li>
+  			<li><a href="competences.html">Compétences</a></li>
+  			<li><a href="projets.html">Projets et Expéreinces professionnelles</a></li>
+  			<li><a href="../CV_Guillaume_Lisse.pdf" download>CV</a></li>
+  			<li><a href="contact.html">Contact</a></li>
+  		</ul>
+  	</nav>
+
+    <section class="contact">
+        <div class="tel">
+            <h1><b><i class="fa-solid fa-phone"></i>&nbsp;06 45 98 90 04</b></h1>
+        </div>
+        
+        <div class="mail">
+            <h1><b><i class="fa-solid fa-envelope"></i>&nbsp;<a id="emailLink" href="mailto:lisseguillaume@gmail.com">Envoyer un e-mail</a></b></h1>
+        </div>
+    </section>
+    
+    <section id="up"></section>
+    <section id="down"></section>
+    <section id="left"></section>
+    <section id="right"></section>
+
+    <script src="../script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
