@@ -32,11 +32,9 @@ item.forEach((i) => {
     i.addEventListener("click", addActiveClass)
 });
 
-// curseur personnalisé
+// email
 
-let cursor = document.querySelector('#cursor');
-document.addEventListener('mousemove', (e) => {
-    cursor.style.top = e.pageY + 'px';
-    cursor.style.left = e.pageX + 'px';
-})
-
+document.getElementById("emailLink").addEventListener("click", function() {
+    var email = "lisseguillaume@gmail.com";
+    this.href = "mailto:" + email;
+});
