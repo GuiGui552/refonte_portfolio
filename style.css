@@ -645,6 +645,10 @@ body{
   z-index: 1;
 }
 
+.projets a{
+  color: #ffffff;
+}
+
 @media (max-width: 1300px) {
   .projets{
     margin: 150px 20px 0 20px;
